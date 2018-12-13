@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<h1 align = "center">ECE 435 Chatroom</h1>
+  <head>
+    <meta charset="utf-8">
+    <title>ECE435 Chatroom </title>
+    <link rel="stylesheet" href="/styles.css"/>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+  </script>
+  <body>
+<div id="ECE 435 Chat room">
+    <div id = "chat-window">
+      <div id="output"></div>
+      </div>
+    <input id= "userID" type = "text" placeholder = "userID" />
+    <input id="message" type ="text" placeholder = "message" />
+    <button id = "send">Send</button>
+  </div>
+    <button id = "disconnect">Disconnect</button>
+  </div>
+  <div id = "chat-window">
+  <script src="/chat.js"></script>
+  </body>
+  <footer>
+  <p>Created by: Nick Jarvis</p>
+  <p>Chatroom instructions: Please fill in username and message before pressing send. If username is left blank, you will be identified as Anonymous.</p>
+</footer>
+</html>
